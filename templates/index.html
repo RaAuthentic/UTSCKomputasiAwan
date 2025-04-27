@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil - Keindra Bagas Maulana</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #fff8f0;
+        }
+        .profile-img {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 50%;
+            margin-bottom: 20px;
+        }
+        .section-title {
+            margin-top: 40px;
+            margin-bottom: 20px;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <div class="container py-5">
+        <div class="text-center">
+            <img src="{{ url_for('static', filename='IMG_2818.JPG') }}" alt="Profile Picture" class="profile-img">
+            <h1 class="mt-3">{{ profile[0] }}</h1>
+            <p>{{ profile[1] }}</p>
+            <p><strong>Kampus:</strong> {{ profile[2] }}</p>
+        </div>
+
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <h3 class="section-title">Tentang Saya</h3>
+                <p>
+                    Saya adalah mahasiswa Informatika dari Institut Teknologi Nasional Bandung yang memiliki ketertarikan dalam bidang pengembangan perangkat lunak, keamanan jaringan, dan teknologi drone.
+                    Memiliki pengalaman dalam proyek pengembangan sistem IoT dan aplikasi berbasis cloud computing.
+                </p>
+
+                <h3 class="section-title">Pendidikan</h3>
+                <ul>
+                    <li>Institut Teknologi Nasional Bandung - Informatika (S1)</li>
+                </ul>
+
+                <h3 class="section-title">Keahlian</h3>
+                <ul>
+                    <li>Python (Flask, OpenCV)</li>
+                    <li>PHP (Laravel)</li>
+                    <li>Cloud Computing (AWS, MQTT, IoT)</li>
+                    <li>Network Security (ECC, AES, Zero Trust)</li>
+                    <li>Computer Vision (ArUco Marker, Drone Navigation)</li>
+                </ul>
+
+                <h3 class="section-title">Pengalaman Proyek</h3>
+                <ul>
+                    <li>Pengembangan strategi navigasi drone berbasis ArUco untuk AutoDocking</li>
+                    <li>Sistem microsegmentation jaringan berbasis ESP32 & MQTT</li>
+                    <li>Pengembangan dashboard visualisasi IoT dengan Laravel Livewire</li>
+                </ul>
+
+                <h3 class="section-title">Organisasi</h3>
+                <ul>
+                    <li>Anggota Himpunan Mahasiswa Informatika ITENAS (HIMATIF)</li>
+                </ul>
+
+            </div>
+        </div>
+    </div>
+</body>
+</html>
